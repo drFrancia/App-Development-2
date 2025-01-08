@@ -1,283 +1,133 @@
-/* General Styles */
+/* Reset básico */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f3ecef; /* Rosa pastel */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
-    font-size: 16px; /* Base adaptable */
 }
 
-/* Header Styles */
-/* Ajustes para la barra de navegación */
+/* Estilos del encabezado */
+header {
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 0;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c594aa; /* Color de fondo */
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    flex: 1; /* Ocupa espacio a la izquierda */
-}
-
-.nav-links {
-    display: flex;
-    gap: 1rem; /* Espaciado uniforme entre los botones */
-    justify-content: flex-end; /* Alinea los enlaces a la derecha */
-    flex: 2; /* Asegura que los enlaces estén en el extremo derecho */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #030303; /* Color de texto */
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    width: 120px; /* Define un ancho uniforme */
-    text-align: center; /* Centra el texto dentro del botón */
-    display: inline-block; /* Asegura que los botones se comporten como bloques en línea */
-}
-
-.nav-links a:hover {
-    background-color: #ffd2dc;
-    color: #333;
-}
-
-.nav-links .active {
-    background-color: #ffffff;
-    border: 2px solid #fff7f9;
-    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo-img {
-    width: 80px;
-    height: auto;
-    border-radius: 25%;
+    height: 50px;
 }
 
-.title {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #ffe3ed;
-    text-align: center;
-}
-
-.subtitle {
-    font-size: 1rem;
-    color: #ffe3ed;
-    margin-bottom: 1rem;
-}
-
-nav {
-    text-align: center;
-    margin-top: 1rem;
-    flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-}
-
-nav a {
-    margin: 0 8px;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #ff8da1;
-    background-color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #ffd2dc;
-    color: #333;
+.nav-links a.active {
+    text-decoration: underline;
 }
 
-nav .active {
-    background-color: #ffffff;
-    border: 2px solid #ff8da1;
+/* Estilos principales */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-/* Intro Section */
 
 .intro {
     text-align: center;
-    padding: 2rem 1rem;
-    margin: 1rem auto;
-    max-width: 90%;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.intro h2 {
-    color: #ff8da1;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .intro-img {
     max-width: 100%;
     height: auto;
-    margin: 1rem 0;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
-/* Featured Section */
-.featured {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
+/* Estilos de las secciones destacadas */
 .featured h2 {
-    color: #ff8da1;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .card-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
-    width: 100%;
-    max-width: 220px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
+    max-width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    color: #ff8da1;
-    font-size: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #0078D7;
 }
 
 .card p {
+    font-size: 0.9em;
     color: #555;
-    font-size: 0.9rem;
-    margin: 0.5rem 0 0;
+    margin-bottom: 10px;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-}
-
-/* Footer */
+/* Estilos del pie de página */
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    background-color: #ff8da1;
-    padding: 1rem;
-    color: #ffffff;
-    font-size: 0.8rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
-.titleObreros {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #ffe3ed;
+footer p {
+    font-size: 0.9em;
 }
 
-/* About Us Section */
+/* Estilos específicos para "about-card" */
 .about-card {
-    max-width: 90%;
-    margin: 2rem auto;
-    background-color: #ffffff;
-    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.about-card h2 {
-    color: #ff8da1;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.about-card p {
-    color: #555;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav {
-        flex: 1 1 100%;
-        margin: 0;
-    }
-
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
-    .subtitle {
-        font-size: 0.9rem;
-    }
-
-    .card-container {
-        flex-direction: column;
-    }
-
-    .intro, .about-card {
-        padding: 1rem;
-    }
-
-    .featured h2, .about-card h2 {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-img {
-        width: 60px;
-    }
-
-    .title {
-        font-size: 1rem;
-    }
-
-    .card {
-        max-width: 100%;
-    }
-
-    .card-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    nav a {
-        font-size: 0.8rem;
-        padding: 6px 12px;
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
 }

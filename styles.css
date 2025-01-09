@@ -109,6 +109,7 @@ main {
 
 /* Estilos del pie de página */
 footer {
+    Top: px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -116,7 +117,18 @@ footer {
     margin-top: 20px;
 }
 
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+ }
+
+ 
 footer p {
+    
     font-size: 0.9em;
 }
 

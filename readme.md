@@ -18,7 +18,7 @@ Estás cansado de lidiar con un plomero que desaparece como un ex o un electrici
    - Proveedores de Servicios (`obreros.html`)
    - About Us (`about.html`)
 2. **Pruebas de Usuario:** Se realizaron cinco pruebas de usuario para verificar que los botones, enlaces y elementos interactivos sean intuitivos.
-3. **Despliegue:** El proyecto está desplegado en GitHub Pages/Netlify para acceso público.
+3. **Despliegue:** El proyecto está desplegado en GitHub Pages para acceso público.
 4. **Estándares de Accesibilidad:** La página es usable para todos los usuarios, incluso en navegadores antiguos.
 
 ## Habilidades Aplicadas
@@ -36,7 +36,7 @@ Estás cansado de lidiar con un plomero que desaparece como un ex o un electrici
 2. **Abrir el Proyecto:**
    Navegar al archivo `index.html` y abrirlo en cualquier navegador.
 3. **Despliegue:**
-   El proyecto está desplegado en [GitHub Pages/Netlify](#).
+   El proyecto está desplegado en [GitHub Pages](#).
 
 ## Archivos Incluidos
 - `index.html`: Página de inicio.
@@ -58,7 +58,7 @@ Estás cansado de lidiar con un plomero que desaparece como un ex o un electrici
 Se ha documentado cada cambio significativo en el archivo `CHANGELOG.md` para facilitar el seguimiento del progreso del proyecto.
 
 ## Autor
-Desarrollado por [Tu Nombre]. Este proyecto fue creado como parte del desafío "App del Año para Personas Hastías de Asunción".
+Desarrollado por Dev. Sebastian Insfran. Este proyecto fue creado como parte del desafío "App del Año para Personas Hastías de Asunción".
 
 ---
 Gracias por visitar WrenchHub. ¡Conecta. Repara. Soluciona!
